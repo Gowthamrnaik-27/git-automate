@@ -1,0 +1,16 @@
+name: hello world
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Checkout code
+         uses: action/checkout@v3
+
+        - name: Print hello
+          run: echo "hello,github actions"
+    
