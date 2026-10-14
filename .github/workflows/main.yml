@@ -1,18 +1,13 @@
-name: hello world
+name: gowtham
 
 on:
   push:
-    branches:
-      - main
+   branches: [ main ]
 
 jobs:
-  say-hello:
+  demo:
     runs-on: ubuntu-latest
-    
-    steps:
-       - name: Checkout code
-         uses: actions/checkout@v3
 
-        - name: Print hello
-          run: echo "hello,github actions"
-    
+    steps:
+      -  name: Greetings
+         run: echo "Hello world beete"
